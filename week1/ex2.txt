@@ -1,0 +1,117 @@
+    1  ls
+    2  cd week1
+    3  ls
+    4  nano ex1.txt
+    5  ls -lah
+    6  python
+    7  history > ~/week1/ex2.txt
+    8  ls
+    9  nano ex2.txt
+   10  touch ex3.sh
+   11  ls
+   12  nano ex3.sh
+   13  sh ex3.sh
+   14  nano ex3.sh
+   15  gedit ~/week1/main.c
+   16  apt install gedit
+   17  gedit ~/week1/main.c
+   18  ls
+   19  nano main.c
+   20  gcc main.c -o ex4
+   21  ls
+   22  ./ex4
+   23  ls
+   24  nano ex4
+   25  ды
+   26  ls
+   27  nano ex4
+   28  git add .
+   29  git init
+   30  git add .
+   31  ls
+   32  cd .git
+   33  ls
+   34  ls ..
+   35  cd ..
+   36  git commit -am "I have done the work"
+   37  git config --global user.email "d.livitin@innopolis.university"
+   38  git config --global user.name "Dablup"
+   39  git commit -am "I have done the work"
+   40  git push origin master
+   41  git push OS_INNO/week1 master
+   42  git push OS_INNO master
+   43  ls
+   44  cd .git
+   45  ls
+   46  cd ..
+   47  ls
+   48  git remote add origin https://github.com/Dablup/OS_INNO.git
+   49  git remote -v
+   50  git config --list
+   51  git push origin master
+   52  git push --help
+   53  git push origin master
+   54  ls
+   55  ls -lah
+   56  rm .git
+   57  rm -rF .git
+   58  rm -rf .git
+   59  ls
+   60  ls -lah
+   61  git add .
+   62  git init
+   63  git add .
+   64  git commit -m "I have done assignment"
+   65  git push origin master
+   66  git remote add origin https://github.com/Dablup/OS_INNO.git
+   67  git remote -v
+   68  git push origin master
+   69  git rm ex1
+   70  git rm ex1.txt
+   71  git rm ex2.txt
+   72  git rm ex3.sh
+   73  git rm ex4
+   74  git rm main.c
+   75  git commit
+   76  git ls-tree master
+   77  cd .git
+   78  ls
+   79  cd branches
+   80  ls
+   81  cd ..
+   82  git push origin master
+   83  git add /week1/.
+   84  git add week1/.
+   85  add week1
+   86  git add week1
+   87  git add week1/.
+   88  ls -lah
+   89  cd .git
+   90  ls -lah
+   91  cd ..
+   92  ls
+   93  git init
+   94  git add week1
+   95  git commit -m "I have done assignment"
+   96  git remote -v
+   97  git remote add origin https://github.com/Dablup/OS_INNO.git
+   98  git remote -v
+   99  git push origin master
+  100  git pull
+  101  git push origin master
+  102  cd week1
+  103  git pull
+  104  cd ..
+  105  git push origin master
+  106  ls -lah
+  107  rm -rf .git
+  108  ls -lah
+  109  cd week1
+  110  ls
+  111  ls -lah
+  112  rm -rf .git
+  113  ls -lah
+  114  ls /usr/bin | grep gcc | sort -r > ~/week1/ex1.txt
+  115  ls
+  116  nano ex1.txt
+  117  history > ~/week1/ex2.txt
