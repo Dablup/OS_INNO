@@ -167,5 +167,14 @@ int main(void) {
             enqueue(q,numberOfMin);
         }
     }
+    float avg_wt = 0;
+    float avg_tat = 0;
+    for (int i = 0; i < n; i++){
+     avg_wt = avg_wt +  process_list[i].waitingTime;
+     avg_tat = avg_tat + process_list[i].turnAroundTime;
+
+    }
+    printf("Average turn around time is %f\n", avg_tat/n);
+    printf("Average waiting time is %f\n",avg_wt/n);
     return 0;
 }
