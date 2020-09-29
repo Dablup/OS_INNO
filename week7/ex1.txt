@@ -1,0 +1,6 @@
+  text    data     bss     dec     hex filename
+  4268     584       8    4860    12fc /root/week6/ex1
+
+
+I used command:  size --format=Berkeley ~/week6/ex1
+To determine all the values of the file ex1 from week6.
