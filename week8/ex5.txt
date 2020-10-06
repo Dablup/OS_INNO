@@ -1,0 +1,5 @@
+What is physical adress? It is a real adress(real layout of the RAM) of physical memory. 
+
+What is virtual adress? It is a number in a virtual memory that give an opportunity
+to the process to access location on main memory independently of other processes and use more space than exist in main memory by adding or getting some memory from the hard disk.
+

@@ -1,0 +1,3 @@
+Since we have 8KB = 2^13 pages it means that 13 bits of the adress is occupied by offset. 
+Therefore for the number of page we have 16 - 13 = 3 bits. And thus a single-level linear page may consist up to 2^3 = 8 entries.
+
