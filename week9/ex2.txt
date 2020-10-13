@@ -1,0 +1,19 @@
+To increase a hit ratio we can use such sequence as: 1 2 3 4 5 6 7 8 1 2 3 4 5 6 7 8
+Since there are a lot of recurring values, we will hit much more often.
+
+Result fo this sequence(for number of pageFrames bigger than 8):
+Hits: 8
+Misses: 8
+Ratio hits to misses: 1.000000
+
+
+
+
+To decrease a hit ratio we can use such sequence as: 1 2 3 4 5 6 7 8 9 10 11 12 13
+Since there are only different values, we will miss everytime.
+
+Result for this sequence:
+Hits: 0
+Misses: 13
+Ratio hits to misses: 0.000000
+
