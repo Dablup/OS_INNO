@@ -1,0 +1,4 @@
+./tmp/link1
+./tmp/..
+./tmp/file1
+./tmp/.
