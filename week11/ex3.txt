@@ -1,0 +1,6 @@
+The difference is that first programm prints 'Hello' 2 times
+And the second program prints 'Hello' only 1 time.
+
+The reason for this is following: in the second programm we have '\n' at the end of 'Hello', therefore the buffer for the child process is empty after forking.
+
+In the first programm we dont have '\n' at the end of 'Hello', therefore the buffer for child process will contain the word 'Hello' and buffer for the parent process also will contain word 'Hello'. In the end programm will print this word twice.  
