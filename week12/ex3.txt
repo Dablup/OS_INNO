@@ -1,0 +1,68 @@
+ **DEFAULT RUNNING**
+
+root@OS_COURSE001:~/week12# nano file2
+root@OS_COURSE001:~/week12# time ./copy file1 file2
+
+real    0m0.001s
+user    0m0.000s
+sys     0m0.000s
+______________________________________________________________________________
+ **RUNNING WITH 64 bytes buffer**
+
+root@OS_COURSE001:~/week12# gcc -DBUF_SIZE=64 copy.c -o copy
+root@OS_COURSE001:~/week12# time ./copy file1 file2
+
+real    0m0.002s
+user    0m0.000s
+sys     0m0.000s
+______________________________________________________________________________
+ **RUNNING WITH 2 bytes buffer**
+
+root@OS_COURSE001:~/week12# gcc -DBUF_SIZE=2 copy.c -o copy
+root@OS_COURSE001:~/week12# time ./copy file1 file2
+
+real    0m0.018s
+user    0m0.000s
+sys     0m0.016s
+______________________________________________________________________________
+
+
+
+Now I am  using DSYNC
+
+ **DEFAULT BUFFER WITH DSYNC**
+
+root@OS_COURSE001:~/week12# gcc -DSYNC copy.c -o copy
+root@OS_COURSE001:~/week12# time ./copy file1 file2
+
+real    0m0.709s
+user    0m0.000s
+sys     0m0.000s
+_____________________________________________________________________________
+
+ **RUNNING WITH 64 bytes buffer and DSYNC**
+
+root@OS_COURSE001:~/week12# gcc -DSYNC -DBUF_SIZE=64 copy.c -o copy
+root@OS_COURSE001:~/week12# time ./copy file1 file2
+
+real    0m11.856s
+user    0m0.012s
+sys     0m0.008s
+_____________________________________________________________________________
+
+ **RUNNING WITH 128 bytes buffer and DSYNC**
+root@OS_COURSE001:~/week12# gcc -DSYNC -DBUF_SIZE=128 copy.c -o copy
+root@OS_COURSE001:~/week12# time ./copy file1 file2
+
+real    0m6.408s
+user    0m0.000s
+sys     0m0.008s
+
+______________________________________________________________________________
+
+
+Conclusions:
+
+O_SYNC guarantees that the call will not return before all data has been transferred to the disk
+That is why running time of the programm with O_SYNC is much longer.
+Also while decreasing the size of buffer, the running time is increasing due to the reason that buffer can not hold all the bytes from file1.
